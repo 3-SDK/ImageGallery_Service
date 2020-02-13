@@ -2,13 +2,13 @@ var controller = require('./controllers');
 var router = require('express').Router();
 
 //Connect controller methods to their corresponding routes
-router.get('/gallery/:id', controller.messages.get);
+router.get('/images/:id', controller.images.get);
 
-router.post('/gallery/:id/', controller.messages.post);
+router.post('/images/:id/', controller.images.post);
 
-router.put('/gallery/:id/:imageId', controller.users.get);
+router.put('/images/:id/:imageId', controller.images.get);
 
-router.delete('/gallery/:id/:imageId', controller.users.post);
+router.delete('/images/:id/:imageId', controller.images.post);
 
 
 module.exports = router;
