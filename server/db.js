@@ -13,7 +13,7 @@ let gallerySchema = {
   roomsuite: [String],
   traveler: [String]
 };
-
 let Gallery = mongoose.model("Gallery", gallerySchema);
+
 
 module.exports = Gallery;
