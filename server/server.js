@@ -22,23 +22,7 @@ app.get("/gallery/:id/", (req, res) => {
       }
    })
   });
-//posting a new image in the gallery (based on the id given)
-app.post("/gallery/:id", (req, res) => {
-    let galleryId = req.params.id;
-   getImages.fetch (galleryId, (err,results) => {
-    if(err) {
-        console.log(err)
-      } else {
-        res.send(results)
-      }
-   })
-    })
-  // updating a listing gallery by updating the images from the gallery (deleting and adding new image on that id)
-  app.put("/gallery/:id", (req, res)=> {
-  
-      
-  })
-  app.
+
 
 app.listen(port, () => {
   console.log(`Express listening on ${port}`);
